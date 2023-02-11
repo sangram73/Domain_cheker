@@ -18,8 +18,11 @@ def Entry_domain():
 
     if status =="yes":
         result="!ohoo it will be already taken"
+        label3.config(background="red")
     else:
         result="Huryy its available"
+        label3.config(background="green")
+        
     label3.config(text=result)
 
 
@@ -39,7 +42,7 @@ check=Button(text="Check",background="lightgreen",width=20,borderwidth=3,font=("
 check.grid(column=2,row=7)
 # lable for  show  result
 label3 = Label(text="", font=("Sans Serif",22,"bold"))
-label3.grid(column=2, row=9)
+label3.grid(column=2, row=9,padx=20,pady=20)
 
 
 # for placeholder the text
