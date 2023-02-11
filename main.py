@@ -26,6 +26,10 @@ label2.grid(column=2, row=4)
 # entry for get input for user
 input_domain = Entry(width=50)
 input_domain.grid(column=2, row=5)
+
+#  add a submit Button
+check=Button(text="Check",background="lightgreen",width=20)
+check.grid(column=2,row=7)
 # for placeholder the text
 input_domain.insert(0, "eg. web-angle.com")
 
