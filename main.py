@@ -1,5 +1,12 @@
 import requests
+from tkinter import *
 
+
+
+window=Tk()
+window.title("Domain checker")
+window.config(padx=20,pady=20)
+canvas=Canvas(window,width=500,height=500)
 domain = input("check domain name: ")
 response = requests.get(
     url=f"https://api.whoisfreaks.com/v1.0/whois?apiKey=65a7b9e7b5204eff8ca880e216cdc2b4&whois=live&domainName={domain}")
@@ -14,15 +21,3 @@ else:
 print(msg)
 
 
-# import requests
-
-# url = "https://domaination.p.rapidapi.com/domains/%7Bdomain-name%7D"
-
-# headers = {
-# 	"X-RapidAPI-Key": "d017b73df2mshd58e554d8099989p16e2c7jsn12371d46cc0f",
-# 	"X-RapidAPI-Host": "domaination.p.rapidapi.com"
-# }
-
-# response = requests.request("GET", url, headers=headers)
-
-# print(response.text)
