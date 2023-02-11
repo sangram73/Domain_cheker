@@ -14,6 +14,8 @@ def Entry_domain():
         url=f"https://api.whoisfreaks.com/v1.0/whois?apiKey=65a7b9e7b5204eff8ca880e216cdc2b4&whois=live&domainName={domain}")
     res = response.json()
     status = res["domain_registered"]
+    input_domain.delete(0, END)
+
     if status =="yes":
         result="!ohoo it will be already taken"
     else:
