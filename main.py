@@ -20,9 +20,12 @@ def Entry_domain():
 label1 = Label(text="Useing Tkinter", font=("Arial",30,"bold"))
 label1.grid(column=2, row=0)
 
+# lable for text show 
+label2 = Label(text="Domain Name", font=("Sans Serif",22,"bold"))
+label2.grid(column=2, row=4)
 # entry for get input for user
-input_domain = Entry(width=40,highlightcolor="#3b3a30")
-input_domain.grid(column=2, row=1)
+input_domain = Entry(width=50)
+input_domain.grid(column=2, row=5)
 # for placeholder the text
 input_domain.insert(0, "eg. web-angle.com")
 
