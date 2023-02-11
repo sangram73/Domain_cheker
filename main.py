@@ -27,11 +27,11 @@ def Entry_domain():
 
 
 # lable for text show
-label1 = Label(text="Useing Tkinter", font=("Arial", 30, "bold"))
+label1 = Label(text="Useing Tkinter", font=("Arial", 30, "bold"),background="#4d76a3")
 label1.grid(column=2, row=0)
 
 # lable for text show
-label2 = Label(text="Domain Name", font=("Sans Serif", 22, "bold"))
+label2 = Label(text="Domain Name", font=("Sans Serif", 22, "bold"),background="#4d76a3")
 label2.grid(column=2, row=4,padx=20,pady=20)
 # entry for get input for user
 input_domain = Entry(width=20,font=("Sans Serif",11))
@@ -42,7 +42,7 @@ check = Button(text="Check", background="lightgreen", width=20,
                borderwidth=3, font=("Sans Serif", 10, "bold"), command=Entry_domain)
 check.grid(column=2, row=7)
 # lable for  show  result
-label3 = Label(text="", font=("Sans Serif", 22, "bold"))
+label3 = Label(text="", font=("Sans Serif", 22, "bold"),background="#4d76a3")
 label3.grid(column=2, row=9, padx=20, pady=20)
 
 
